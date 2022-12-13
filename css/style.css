@@ -1,0 +1,64 @@
+
+#demo{
+    cursor: pointer;
+}
+.item{
+    height: 450px;
+}
+.item img{
+    object-fit: cover;
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.layer{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11111111;
+    background-color: rgba(0,0,0,0.5);
+}
+.layer-container{
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: auto;
+}
+.layer-container .icon{
+    z-index: 11111111111;
+}
+.fa-times{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.layer-container .container img{
+    width: 85%;
+    height: 400px;
+    object-fit: cover;
+
+}
+.item-container{
+    cursor: pointer;
+
+}
+#imgCont .btn-info{
+    bottom: 3rem;
+    right: 3rem;
+
+}
+#imgCont .btn-danger{
+    bottom: 3rem;
+    left: 3rem;
+
+}
+select{
+    width: 70px !important;
+}
+
