@@ -4,12 +4,15 @@ var layer = document.querySelector(".layer");
 var closeBtn = document.querySelector(".fa-times");
 var imgLayer = document.querySelector(".layer-container .container img");
 var searchInput = document.getElementById("searchInput");
-var radioBtn=document.getElementsByName('exampleRadios');
+var radioBtn = document.getElementsByName("exampleRadios");
 var categoryItem;
 var globalCountry;
-function getData( category) {
+function getData(category) {
   var req = new XMLHttpRequest();
-  req.open("GET",` https://newsapi.org/v2/top-headlines?country=${globalCountry}&category=${category.toLowerCase()}&apiKey=d24728fe817d4eb6b3721e8e7af53a76`);
+  req.open(
+    "GET",
+    ` https://newsapi.org/v2/top-headlines?country=us&category=${category.toLowerCase()}&apiKey=d24728fe817d4eb6b3721e8e7af53a76`
+  );
   req.send();
   req.addEventListener("readystatechange", () => {
     if (req.readyState == 4) {
